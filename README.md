@@ -34,22 +34,26 @@
     SQL: SELECT * FROM dbo.DimType WHERE DimTypeId IN @DimTypeId AND DimName=@DimName;
 
 # INSERT
-- public void Insert(DimModel model)
-- public void InsertAsync(DimModel model)
-- public void Insert(List<DimModel> models)
-- public void InsertAsync(List<DimModel> models)
+
+    public void Insert(DimModel model)
+    public void InsertAsync(DimModel model)
+    public void Insert(List<DimModel> models)
+    public void InsertAsync(List<DimModel> models)
 
 # UPDATE
--  public void Update(DimModel model)
--  public void UpdateAsync(DimModel model)
--  public void Update(List<DimModel> models)
--  public void UpdateAsync(List<DimModel> models)
+
+    public void Update(DimModel model)
+    public void UpdateAsync(DimModel model)
+    public void Update(List<DimModel> models)
+    public void UpdateAsync(List<DimModel> models)
 
 # DELETE
-- public void DeleteDim(int dimId)
-- public void DeleteDimAsync(int dimId)
-- public void DeleteDim(List<int> dimIds)
-- public void DeleteDimAsync(List<int> dimIds)
+
+    public void DeleteDim(int dimId)
+    public void DeleteDimAsync(int dimId)
+    public void DeleteDim(List<int> dimIds)
+    public void DeleteDimAsync(List<int> dimIds)
 
 # TRUNCATE TABLE
-- public void TruncateAsyncDim()
+
+    public void TruncateAsyncDim()
