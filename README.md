@@ -23,15 +23,15 @@
 
 - param: new { DimTypeId=1 } 
 
-    SQL: SELECT * FROM dbo.DimType WHERE DimTypeId=1;
+    SQL: SELECT * FROM dbo.DimType WHERE DimTypeId=@DimTypeId;
 
 - param: new { DimTypeId=new List<int>(){1,2,3 } } 
 
-    SQL: SELECT * FROM dbo.DimType WHERE DimTypeId IN (1,2,3);
+    SQL: SELECT * FROM dbo.DimType WHERE DimTypeId IN @DimTypeId;
 
 - param: new { DimTypeId=new List<int>(){1,2,3 }, DimName="DEMO" } 
 
-    SQL: SELECT * FROM dbo.DimType WHERE DimTypeId IN (1,2,3) AND DimName="DEMO";
+    SQL: SELECT * FROM dbo.DimType WHERE DimTypeId IN @DimTypeId AND DimName=@DimName;
 
 # INSERT
 - public void Insert(DimModel model)
